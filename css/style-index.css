@@ -1,0 +1,299 @@
+/* NOTE: this css formats only index page of the site */
+
+/* body container properties */
+body{
+  display: flex;
+  flex-direction: column;
+  margin: 0px !important;
+  background-color: #2a2a42;
+}
+/* header container proeprties */
+header{
+  width: 100%;
+  height: auto;
+}
+/* logo image container properties */
+header > section:first-child{
+  display: flex;
+  justify-content: center;
+  background-color: #ff724a;
+}
+/* logo imae proeprties */
+header > section:first-child > img{
+  width: 540px;
+  height:auto;
+  padding: 100px;
+}
+/* slogan container propertiess */
+header > section:nth-child(2){
+  display: flex;
+  justify-content: center;
+  background-color: #41426f;
+  border: 6px dashed #ede9d9;
+  border-radius: 5px;
+}
+/* heading text container proeprties */
+header > section:nth-child(2) > h1{
+  align-self: center;
+  margin: 0px;
+  padding-right: 30px;
+  color: #ede9d9;
+  font-size: 50px;
+  font-family: 'Poppins', sans-serif;
+}
+/* slogna image properties */
+header > section:nth-child(2) > img{
+  height: 115px;
+  width: auto;
+}
+/* navigation bar container proeprties */
+header > nav {
+  position: fixed;
+  margin-top: -725px;
+  display: flex;
+  align-items: center;
+  width: 99.3%;
+  height: 50px;
+}
+/* empty div to make horizontal line */
+header > nav > div:first-child{
+  height: 2px;
+  width:96%;
+  background-color: #ede9d9;
+  margin-left: 11px;
+  border-radius: 5px;
+}
+/* div which opens slide menu properties */
+header > nav > div:nth-child(2){
+  display: flex;
+  color: white;
+  background-color: #ff724a;
+  height: 46px;
+  width: 45px;
+  margin: 0px 0px 0px 11px;
+  border-radius: 5px;
+  transition: 500ms;
+}
+/* hover properties for the slide menu opener */
+header > nav > div:nth-child(2):hover{
+  box-shadow: 0px 0px 10px 2px #000000;
+  border: 4px dashed #ede9d9;
+  cursor: pointer;
+  transition: 500ms;
+}
+/* menu icon image properties */
+header > nav > div:nth-child(2) > a > img{
+  width: 45px;
+  height: auto;
+}
+
+/* NOTE: ------------->>>>>MAIN<<<------------------------------------------------------ */
+
+/* all article common proeprties */
+main > article{
+  display: flex;
+  justify-content: flex-end;
+  font-family: 'Poppins', sans-serif;
+}
+/* properties for all odd ranked articels */
+main > article:nth-child(odd){
+  align-items: center;
+  font-size: 40px;
+  color: #ff724a;
+  padding: 100px;
+}
+/* properties for the text container in all odd ranked articles */
+main > article:nth-child(odd) > p{
+  padding: 20px;
+  margin: 0px 80px 0px 50px;
+}
+/* image properties in all odd ranked container */
+main > article:nth-child(odd) > section > img{
+  height: 450px;
+  width: auto;
+  transition: 1000ms;
+}
+/* hover proeprties for images in odd ranked articles */
+main > article:nth-child(odd):hover > section > img{
+  box-shadow: -70px 70px 0px 0px #ff724a;
+  margin-bottom: 70px;
+  transition: 1000ms;
+}
+
+/* properties for all even ranked articles */
+main > article:nth-child(even){
+  background-color: #ff724a;
+  flex-direction: row-reverse;
+  align-items: center;
+  font-size: 40px;
+  color: #2a2a42;
+  padding: 100px;
+}
+/* text container properties in all even ranked articles */
+main > article:nth-child(even) > p{
+  padding: 20px;
+  margin: 0px 50px 0px 80px;
+}
+/* image proeprties for images in even ranked articles */
+main > article:nth-child(even) > section > img{
+  height: 450px;
+  width: auto;
+  transition: 1000ms;
+}
+/* text container properties inside even ranked articles */
+main > article:nth-child(6) > p{
+  font-size: 25px;
+}
+/* image properties for the 6th article */
+main > article:nth-child(6) > section > img{
+  height: 300px;
+  background-color: #5dbcd2;
+}
+/* hover properties for all even ranked articles */
+main > article:nth-child(even):hover > section > img{
+  box-shadow: 70px 70px 0px 0px #2a2a42;
+  margin-bottom: 70px;
+  transition: 1000ms;
+}
+
+//**********************************************
+NOTE: Responsive css **************************
+***********************************************/
+
+/* sammler resolution laptops and monitors */
+@media screen and (max-width:1024px){
+  header > section:first-child > img{
+    width: 400px;
+  }
+
+  header > nav {
+    margin-top: -620px;
+  }
+
+  main > article:nth-child(odd), main > article:nth-child(even){
+    font-size: 25px;
+  }
+
+  main > article:nth-child(odd) > section > img, main > article:nth-child(odd) > section > img{
+    width: 360px;
+    height: auto;
+  }
+
+  main > article:nth-child(6) > section > img{
+    width: 240px;
+    height: auto;
+  }
+  main > article:nth-child(6) > p{
+    font-size: 20px;
+  }
+
+}
+/* tablers */
+@media screen and (max-width: 770px){
+
+  header > section:nth-child(2) > h1{
+    font-size: 30px;
+  }
+  header > nav > div:first-child {
+    width: 89%;
+  }
+
+  main > article:nth-child(odd), main > article:nth-child(even){
+    padding: 50px;
+  }
+
+  main > article:nth-child(even) > section > img{
+    width: 200px;
+    height: auto;
+  }
+
+  main > article:nth-child(odd) > p{
+    font-size: 22px;
+    margin: 0px 60px 0px 0px;
+  }
+
+  main > article:nth-child(even) > p{
+    font-size: 22px;
+    margin: 0px 0px 0px 60px;
+  }
+}
+
+/* phone and small tablets */
+@media screen and (max-width:630px) {
+  header > section:first-child > img{
+    padding: 140px 0px 140px 0px;
+    width: 100%;
+    height: auto;
+  }
+
+  header > section:nth-child(2) > h1{
+    font-size: 20px;
+    padding: 15px 10px;
+    width: fit-content;
+  }
+
+  header > section:nth-child(2) > img {
+    width: 70px;
+    height: auto;
+  }
+
+  header > nav {
+    margin-top: -670px;
+  }
+
+  header > nav > div:first-child{
+    background-color: transparent;
+  }
+
+  main > article:nth-child(odd),main > article:nth-child(even){
+    flex-direction: column-reverse;
+    padding: 20px;
+  }
+
+  main > article:nth-child(odd) > section > img,main > article:nth-child(even) > section > img{
+    height: 160px;
+    width: auto;
+  }
+
+  main > article:nth-child(odd) > p,main > article:nth-child(even) > p{
+    font-size: 20px;
+    margin: 0px;
+    text-align: center;
+  }
+
+  main > article:nth-child(odd):hover > section > img{
+    box-shadow: -30px 30px 0px 0px #ff724a;
+    margin-bottom: 30px;
+  }
+
+  main > article:nth-child(even):hover > section > img{
+    box-shadow: 30px 30px 0px 0px #2a2a42;
+    margin-bottom: 30px;
+  }
+
+  main > article:nth-child(6){
+    padding: 4px;
+  }
+
+  main > article:nth-child(6) > p{
+    font-size: 12px;
+  }
+
+  main > article:nth-child(6) > section > img{
+    height: 100px;
+    width: auto;
+  }
+
+}
+
+@media screen and (max-width:378px) {
+  header > nav {
+    margin-top: -635px;
+  }
+}
+
+@media screen and (max-width:328px) {
+  header > nav {
+    margin-top: -620px;
+  }
+}

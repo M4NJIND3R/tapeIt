@@ -1,0 +1,157 @@
+/* NOTE: this css file manages the slid menu properties of all pages of the site */
+
+/* slid menu container properties */
+menu {
+  margin: 0px;
+  padding: 0px;
+  height: 100%;
+  width: 0;
+  position: fixed;
+  top: 0;
+  right: 0;
+  background-color: #2a2a42;
+  overflow-x: hidden;
+  transition: 0.3s;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: 650ms
+}
+/* font size for all div in slide menu */
+menu > div{
+  font-size: 25px;
+}
+/* close button div of slide menu */
+menu > div:first-child {
+  align-self: flex-start;
+  font-size: 2px;
+  padding-left: 10px;
+}
+/* anchor tag properties for close button */
+menu > div:first-child > a{
+  text-decoration: none;
+  color: #ede9d9;
+  font-weight: bolder;
+  font-size: 40px;
+}
+/* account holder image and name container proeprties */
+menu > div:nth-child(2){
+  display: flex;
+  background-color: rgba(255, 114, 74, 1);
+  border-radius: 5px;
+}
+/* account holder image proeprties */
+menu > div:nth-child(2) > img{
+  width: 150px;
+  height: auto;
+  padding: 0px;
+}
+/* name of owner text container proeprties */
+menu > div:nth-child(2) > p{
+  align-self: center;
+  justify-content: center;
+  padding: 20px 10px;
+  margin-right: 30px;
+  color: #2a2a42;
+  font-family: 'Poppins', sans-serif;
+  border: 3px solid #2a2a42;
+  border-radius: 5px;
+}
+/* list item container properties */
+menu > div:nth-child(3) > ul{
+  margin-bottom: 0px;
+  list-style-image: url("../img/bullet.png");
+}
+/* proeprties for ach list item */
+menu > div:nth-child(3) > ul > li{
+  padding: 20px 40px;
+  border-bottom: 3px solid #ede9d9;
+  transition: 500ms;
+}
+/* hover properties for the list items */
+menu > div:nth-child(3) > ul > li:hover{
+  box-shadow: 310px 0px 0px 0px inset #ede9d9;
+  transition: 500ms;
+}
+/* anchor tag proeprties inside the list items */
+menu > div:nth-child(3) > ul > li > a{
+  text-decoration: none;
+  color: #ede9d9;
+}
+/* hover properties for the anchor tag in list items */
+menu > div:nth-child(3) > ul > li:hover > a{
+  color: #2a2a42;
+  transition: 400ms;
+}
+
+/* NOTE: Responsive css*************************************** */
+
+/* lower resolution laptops and screens */
+@media screen and (max-width: 1025px) {
+  menu > div{
+    font-size: 25px;
+  }
+
+  menu > div:nth-child(2) > img{
+    height: 100px;
+    width: auto;
+  }
+
+  menu > div:nth-child(2) > p{
+    padding: 10px 10px;
+  }
+
+  menu > div:nth-child(3) > ul > li{
+    padding: 10px 10px;
+  }
+}
+/* for tablets */
+@media screen and (max-width: 770px){
+  menu > div{
+    font-size: 20px;
+  }
+
+  menu > div:nth-child(2) > img{
+    height: 60px;
+    width: auto;
+  }
+
+  menu > div:nth-child(2) > p{
+    padding: 6px 6px;
+    margin: 0px;
+    margin-right: 8px;
+  }
+
+  menu > div:nth-child(3) > ul > li{
+    padding: 20px 5px;
+  }
+}
+
+/* for screen of phones */
+@media screen and (max-width: 430px){
+  menu > div{
+    font-size: 12px;
+    flex-direction: column;
+    border-radius: 0%;
+  }
+
+  menu > div:nth-child(2) > img{
+    height: 120px;
+    width: auto;
+  }
+
+  menu > div:nth-child(2) > p{
+    padding: 2px 2px;
+    margin: 2px;
+    margin-right: 2px;
+  }
+
+  menu > div:nth-child(3) > ul{
+    padding-left: 2px;
+    font-size: 10px;
+  }
+
+  menu > div:nth-child(3) > ul > li{
+    padding: 10px 0px;
+  }
+}

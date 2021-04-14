@@ -1,0 +1,252 @@
+/* NOTE: this css file formats onlu contact.html page */
+
+/* body proeprties */
+body{
+  display: flex;
+  flex-direction: column;
+  margin: 0px !important;
+  background-image: url("../img/background.jpg");
+}
+/* main container properties */
+main{
+  background-color: #41426f;
+  width: 70%;
+  align-self: center;
+  margin: 90px 0px;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0px 0px 50px -9px;
+}
+/* properties for container fot the main heading of the page */
+main > section{
+  width: fit-content;
+  align-self: center;
+}
+/* text proeprties for the heading */
+main > section > h2 {
+  font-size: 90px;
+  font-family: 'Poppins', sans-serif;
+  color: #ede9d9;
+  box-shadow: 40px 40px 0px 0px #ff724a;
+  background-color: #2a2a42;
+  padding: 5px 20px 5px 20px;
+  border-radius: 5px;
+  border: 6px dashed white;
+}
+/* first article properties */
+main > article{
+  width: 80%;
+  height: auto;
+  align-self: center;
+  background-color: #ff724a;
+  text-align: center;
+}
+/* common properties for all div containers in the main */
+main > article > div{
+  display: flex;
+  justify-content: center;
+}
+/* properties fot all articles  heading and iamge container */
+main > article > div:first-child{
+  display: flex;
+}
+/* heading text properties of all article */
+main > article > div:first-child > h3{
+  margin: 0px;
+  font-size: 40px;
+  font-family: 'Inknut Antiqua', serif;
+  text-shadow: 3px 1px 3px white;
+}
+/* heading image proeprties of all articles */
+main > article > div:first-child > img{
+  height: 100px;
+  width: 100px;
+  border-radius: 100%;
+  box-shadow: 0px 0px 11px 0px ;
+  margin-right: 10px;
+}
+/* first article properties */
+main > article:nth-child(2){
+  padding: 30px 20px;
+  border: 6px dashed white;
+  border-bottom: none;
+}
+/* first article list container propertiess */
+main > article:nth-child(2) > div > ul{
+  list-style: none;
+}
+/* anchor tag properties inside list of first article */
+main > article:nth-child(2) > div > ul > li > a{
+  text-decoration: none;
+  font-size: 25px;
+  font-family: 'Inknut Antiqua', serif;
+  border-radius: 10px;
+  border-color: white;
+  transition: 500ms;
+}
+/* hover proeprties for the anchor tag insde the list of first article */
+main > article:nth-child(2) > div > ul > li > a:hover{
+  border: 3px dashed white;
+  padding: 0px 3px;
+  font-weight: bolder;
+  color: white;
+  box-shadow: 147px 127px 98px 3px inset red;
+  transition: 500ms;
+}
+/* second srticle properties */
+main > article:nth-child(3){
+  padding: 30px 20px;
+  border: 6px dashed white;
+  border-bottom: none;
+  border-top: none;
+}
+/* second article link properties */
+main > article:nth-child(3) > div > a{
+  margin-left: 40px;
+  text-decoration: none;
+  border-radius: 10px;
+  border-color: white;
+  font-size: 25px;
+  font-family: 'Inknut Antiqua', serif;
+  line-height: 3;
+  transition: 500ms;
+}
+/* second article link hover proeprties */
+main > article:nth-child(3) > div > a:hover{
+  border: 3px dashed white;
+  padding-left: 3px;
+  font-weight: bolder;
+  color: white;
+  box-shadow: 147px 127px 98px 3px inset red;
+  transition: 500ms;
+}
+/* third article container proeprties */
+main > article:nth-child(4){
+  padding: 30px 20px;
+  border: 6px dashed white;
+  border-top: none;
+  margin-bottom: 100px;
+}
+/* article 3 list container proeprties */
+main > article:nth-child(4) > ul{
+  margin-top: 30px;
+  list-style: none;
+  display: flex;
+  justify-content: center;
+}
+/* article 3 list item links properties */
+main > article:nth-child(4) > ul > li > a{
+  border: 0.2px solid black;
+  border-radius: 100%;
+  border-top: none;
+}
+/* article 3 list item links properties */
+main > article:nth-child(4) > ul > li > a:hover{
+  box-shadow: 0px 2px 10px -2px black;
+  border-radius: 100%;
+  background-color: #3f3f3f;
+  border: none;
+  transition: 600ms;
+}
+/* image properties in the listitems of the article 3 */
+main > article:nth-child(4) > ul > li > a > img{
+  height: 50px;
+  width: auto;
+  padding: 0px 10px;
+}
+
+/**********************************************
+NOTE: Responsive css **************************
+***********************************************/
+
+@media screen and (max-width: 948px){
+
+
+  main > section > h2{
+    font-size: 55px;
+  }
+
+  main > article > div:first-child > h3{
+    font-size: 30px;
+  }
+
+  main > article:nth-child(2) > div > ul > li > a{
+    font-size: 18px;
+  }
+
+  main > article:nth-child(3) > div > a{
+    font-size: 18px;
+  }
+
+  main > article:nth-child(4) > ul{
+    padding: 0;
+  }
+}
+
+@media screen and (max-width: 669px){
+  main > section > h2{
+    font-size: 40px;
+    box-shadow: 20px 20px 0px 0px #ff724a;
+  }
+  main > article > div:first-child > img{
+    height: 50px;
+    width: 50px;
+  }
+
+  main > article > div:first-child > h3{
+    font-size: 20px;
+  }
+
+  main > article:nth-child(2) > div > ul{
+    padding: 10px;
+  }
+
+  main > article:nth-child(2) > div > ul > li > a{
+    font-size: 12px;
+  }
+
+  main > article:nth-child(3) > div > a{
+    font-size: 12px;
+    margin-left: 10px;
+  }
+
+  main > article:nth-child(4) > ul{
+    padding: 0;
+  }
+
+  main > article:nth-child(4) > ul > li > a > img{
+    height: 20px;
+    width: 20px;
+  }
+}
+
+@media screen and (max-width: 550px){
+  main > section > h2{
+    font-size: 30px;
+    border: 4px dashed white; 
+  }
+
+  main > article:nth-child(2){
+    border-width: 3px;
+  }
+
+  main > article:nth-child(3){
+    border-width: 3px;
+  }
+
+  main > article:nth-child(4){
+    border-width: 3px;
+  }
+}
+
+@media screen and (max-width: 375px){
+  main > section > h2{
+    font-size: 25px;
+    box-shadow: 10px 10px 0px 0px #ff724a;
+  }
+
+  main > article:nth-child(4) > ul > li > a > img{
+    height: 15px;
+    width: 15px;
+  }
+}

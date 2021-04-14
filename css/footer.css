@@ -1,0 +1,94 @@
+/* NOTE: css file to format the footer all pages */
+
+/* enables smoothe auto scrolling on all pages */
+html{
+  scroll-behavior: smooth;
+}
+
+/* footer container properties */
+footer{
+  display: flex;
+  background-color: #2a2a42;
+  box-shadow: 0px 0px 25px 6px #202028;
+  height: fit-content;
+  padding: 10px;
+}
+/* propertie for all sections in footer */
+footer > section{
+  padding: 20px;
+  background-color: #252537;
+  border-radius: 10px;
+}
+/* image properties for logo in footer */
+footer > section > img{
+  width: auto;
+  height: 140px;
+  border-radius: 10px;
+}
+/* hover properties for the footer logo */
+footer > section > img:hover{
+  border: 3px dashed white;
+  box-shadow: 3px 3px 5px 3px;
+  transition: 500ms;
+}
+/* slogan properties */
+footer > section > p{
+  margin: 54px 0px;
+  color: #ede9d9;
+  font-size: 25px;
+  font-family: 'Poppins', sans-serif;
+}
+/* footer slogan container property */
+footer > section:nth-child(2){
+  width: 82%;
+}
+
+/**********************************************
+NOTE: Responsive css **************************
+***********************************************/
+
+/* laptop and smaller resolution screen/monitors */
+@media screen and (max-width: 770px){
+  footer > section:nth-child(2){
+    height: fit-content;
+  }
+
+  footer > section > img{
+    height: 100px;
+    width: auto;
+  }
+
+  footer > section > p {
+    font-size: 15px;
+    height: fit-content;
+  }
+}
+/* phones and smaller tablets */
+@media screen and (max-width: 630px){
+  footer > section:first-child{
+    height: fit-content;
+  }
+
+  footer > section:last-child{
+    height: fit-content;
+    margin-left: -5px;
+    padding: 44px 10px;
+  }
+
+  footer > section:first-child > img{
+    height: 60px;
+    width: auto;
+  }
+
+  footer > section:last-child > p{
+    font-size: 10px;
+    height: fit-content;
+    margin: 0px;
+  }
+}
+
+@media screen and (max-width: 390px){
+  footer > section:last-child{
+    padding: 38px 10px;
+  }
+}

@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- meta tag fo charset -->
+    <meta charset="utf-8">
+    <!-- online description of site -->
+    <meta name="description" content="Contact Tape it headquaters">
+    <!-- no search result for this site online -->
+    <meta name="robots" content="nofollow, noindex">
+    <!-- viewport settings -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- name ofsite on tab -->
+    <title>Take iT: Contacts</title>
+    <!-- links to connest css for header footer and main body and slid menu -->
+    <link rel="stylesheet" href="../css/style-contact.css">
+    <link rel="stylesheet" href="../css/header.css">
+    <link rel="stylesheet" href="../css/footer.css">
+    <link rel="stylesheet" href="../css/menu.css">
+    <!-- google fonts for site -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inknut+Antiqua&family=Poppins:wght@900&display=swap" rel="stylesheet">
+    <!-- link to external javascript and jQuery for site -->
+    <script type="text/javascript" src="http://code.jquerry.com/jquery-3.4.1.min.js"></script>
+    <script type="text/javascript" src="../js/script.js"></script>
+  </head>
+  <!-- body (using id to target in js) -->
+  <body id="body">
+
+    <!-- header for site -->
+    <header>
+      <!-- section for logo image -->
+      <section>
+        <!-- logo image -->
+        <img src="../img/logo.png" alt="Tape iT logo">
+      </section>
+
+      <!-- section for site slogan and wave image icon -->
+      <section>
+        <!-- slogan -->
+        <h1>Listen To Your lEgends...</h1>
+        <!-- image wave icon -->
+        <img src="../img/music-wave-icon.svg" alt="music wave form">
+      </section>
+
+      <!-- navigation bar -->
+      <nav>
+        <!-- empty div to make a horizontal bar in navigation -->
+        <div></div>
+        <!-- div, when clicked open slid menu -->
+        <div onclick="open_Menu()">
+          <!-- text in the menu opener button -->
+          <p>Menu</p>
+          <!-- menu icon image -->
+          <a href="#"><img src="../img/menu-icon.svg" alt="menu icon"></a>
+        </div>
+
+        <!-- actual lide menu -->
+        <menu id="menu">
+          <!-- div contains symblo in anchor tag to close theslid menu -->
+          <div>
+            <a href="#" onclick="close_Menu()">&times;</a>
+          </div>
+
+          <!-- image of the accunt holder -->
+          <div>
+            <img src="../img/act-img.svg" alt="account image">
+            <!-- account holder name -->
+            <p>Your Name here</p>
+          </div>
+
+          <!-- list of links in menu -->
+          <div class="menu-content">
+            <ul>
+              <!-- link to profile, account, home, product page,contact page and companu info -->
+              <li><a href="#">Edit Profile</a></li>
+              <li><a href="#">My Account</a></li>
+              <li><a href="../index.html">Home</a></li>
+              <li><a href="promotion.html">Promotion Offers</a></li>
+              <li><a href="contact.html">Contact</a></li>
+              <li><a href="corporate-info.html">Corporate Information</a></li>
+            </ul>
+          </div>
+        </menu>
+      </nav>
+    </header>
+
+    <!-- body main portion -->
+    <main>
+      <!-- heading for the page -->
+      <section>
+        <h2>Contact uS</h2>
+      </section>
+
+      <!-- first article for support Contacts -->
+      <article>
+        <!-- heading for article -->
+        <div>
+          <!-- image and heading-->
+          <img src="../img/support.gif" alt="supporting">
+          <h3>Support</h3>
+        </div>
+        <!-- support contant list with emails, when clicked open ups you mailing app -->
+        <div>
+          <ul>
+            <li><a href="mailto:tisupport@support.tapeit.com">tisupport@support.tapeit.com</a></li>
+            <li><a href="mailto:titechteam@support.tapeit.com">titechteam@support.tapeit.com</a></li>
+            <li><a href="mailto:tivendor@support.tapeit.com">tivendor@support.tapeit.com</a></li>
+          </ul>
+        </div>
+      </article>
+
+      <!-- article for feed back Contacts -->
+      <article>
+        <!-- image and heading-->
+        <div>
+          <img src="../img/feedback.gif" alt="feedback">
+          <h3>Feed Back</h3>
+        </div>
+        <!-- links for contact -->
+        <div>
+          <a href="mailto:it@feedback.tapeit.com">it@feedback.tapeit.com</a>
+        </div>
+      </article>
+
+      <!-- social media contact article  -->
+      <article>
+        <!-- div for image and heading -->
+        <div>
+          <img src="../img/social.gif" alt="scoial media">
+          <h3>Social</h3>
+        </div>
+
+        <!-- list of socual Contacts -->
+        <ul>
+          <!-- instagram contact -->
+          <li>
+            <a href="https://www.instagram.com/tapeit/?hl=en">
+              <img id="ig" onmouseover="showColorImg(this)" onmouseout="showNormalImg(this)" src="../img/ig.png" alt="instagram">
+            </a>
+          </li>
+          <!-- facebook contact -->
+          <li>
+            <a href="https://www.facebook.com/TapeItOffcial/">
+              <img id="fb" onmouseover="showColorImg(this)" onmouseout="showNormalImg(this)" src="../img/fb.png" alt="facebook">
+            </a>
+          </li>
+          <!-- telegram contact -->
+          <li>
+            <a href="https://t.me/TapeiT">
+              <img id="tg" onmouseover="showColorImg(this)" onmouseout="showNormalImg(this)" src="../img/tg.png" alt="telegram">
+            </a>
+          </li>
+          <!-- twitter contact -->
+          <li>
+            <a href="https://twitter.com/tapeit">
+              <img id="tw" onmouseover="showColorImg(this)" onmouseout="showNormalImg(this)" src="../img/tw.png" alt="twitter">
+            </a>
+          </li>
+          <!-- whatsapp contact -->
+          <li>
+            <a href="https://web.whatsapp.com/">
+              <img id="wa" onmouseover="showColorImg(this)" onmouseout="showNormalImg(this)" src="../img/wa.png" alt="whatsapp">
+            </a>
+          </li>
+          <!-- youtube contact -->
+          <li>
+            <a href="https://www.youtube.com/user/TapeiT">
+                <img id="yt" onmouseover="showColorImg(this)" onmouseout="showNormalImg(this)" src="../img/yt.png" alt="youtube">
+            </a>
+          </li>
+        </ul>
+      </article>
+    </main>
+
+    <!-- footer for the site -->
+    <footer>
+      <!-- section with image -->
+      <section>
+        <img src="../img/logo.png" alt="Tape iT logo">
+      </section>
+      <!-- section for footer slogan -->
+      <section>
+        <p>&#169; kama Tape iT retro music products pvt.ltd.</p>
+      </section>
+    </footer>
+  </body>
+</html>

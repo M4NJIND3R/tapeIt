@@ -1,0 +1,205 @@
+/* NOTE: this css only formats the promotion.html */
+
+/* body container properties */
+body{
+  display: flex;
+  flex-direction: column;
+  margin: 0px !important;
+  background-image: url("../img/background.jpg");
+}
+/* main container properties */
+main{
+  width: 80%;
+  align-self: center;
+  margin: 90px 0px;
+  padding: 30px 10px 30px 30px;
+  border-radius: 25px;
+  box-shadow: 0px 0px 50px -9px;
+}
+/* next radio, button proeprties */
+main > article > button{
+  font-family: 'Inknut Antiqua', sans-serif;
+  margin-left: 1060px;
+  margin-bottom: 5px;
+  background-color: #ff724a;
+  border: 2px dashed white;
+  border-radius: 20px;
+  font-family: 'Poppins', sans-serif;
+  transition: 800ms;
+}
+/* hover properties for the button in all articels */
+main > article > button:hover{
+  border: 2px solid white;
+  transition: 800ms;
+}
+/* div container for the content of the articles */
+main > article > div{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+/* image of radio proeprties in all articles */
+main > article > div > img{
+  width: 493px;
+  height: auto;
+  box-shadow: 56px 53px 0px 0px #ff724a;
+  margin: 0px 67px 53px 0px;
+}
+/* name and description container proeprties of all articles  */
+main > article > div > section{
+  text-align: center;
+}
+/* name heading text container proeprties */
+main > article > div > section > h3{
+  background-color: #ff724a;
+  font-size: 35px;
+  font-family: 'Poppins', sans-serif;
+  color: #ede9d9;
+  text-shadow: 4px 4px 4px black;
+  border-radius: 20px 0px 20px 0px;
+  margin:0px;
+  padding: 10px 25px;
+  margin-left: 20px;
+}
+/* description text container properties */
+main > article > div > section > p{
+  background-color: rgba(0, 0, 0, 0.1);
+  color: #ff724a;
+  padding: 0px 25px;
+  margin-left: 20px;
+  border-radius: 20px 0px 20px 0px;
+  width: 576px;
+  font-family: 'Inknut Antiqua', serif;
+  font-size: 20px;
+}
+/* price info properties */
+main > article > div > div:nth-child(3){
+  width: 100%;
+  padding-left: 48%;
+  color: #ca4242;
+  font-size: 30px;
+  font-family: 'Poppins', sans-serif;
+  margin: 10px 0px;
+}
+/* price text container proeprties */
+main > article > div > div > h4{
+  margin: 0px;
+  color: #ff665e;
+  background-color: rgba(0, 0, 0, 0.6);
+  width: fit-content;
+  padding: 4px 10px 4px 10px;
+  border-radius: 10px;
+}
+/* buy now anchor tag properties */
+main > article > div > div:nth-child(3) > a {
+  border: 5px dashed #ffffff;
+  color: white;
+  border-radius: 30px;
+  padding: 6px 12px;
+  transition: 500ms;
+  font-size: 20px;
+}
+/* buy now anchor hover properties */
+main > article > div > div:nth-child(3) > a:hover {
+  box-shadow: 26px 11px 81px 13px inset red;
+  transition: 500ms;
+}
+
+/**********************************************
+NOTE: Responsive css **************************
+***********************************************/
+
+@media screen and (max-width: 1500px){
+  main > article > button{
+    margin-left: 1000px;
+  }
+
+  main > article > div > img{
+    width: 400px;
+    height: auto;
+    margin-bottom: 70px;
+  }
+}
+
+ @media screen and (max-width: 1370px){
+  main > article > button{
+    margin-left: 800px;
+  }
+}
+
+ @media screen and (max-width: 1140px){
+  main > article > button{
+    margin-left: 700px;
+  }
+}
+
+@media screen and (max-width: 885px){
+  main > article > button{
+    margin-left: 500px;
+  }
+
+  main > article > div > section {
+    display: flex;
+    flex-direction: column;
+  }
+  main > article > div > section > h3{
+    font-size: 25px;
+    width: fit-content;
+    align-self: center;
+    margin: 10px 0px;
+  }
+  main > article > div > section > p{
+    font-size: 15px;
+    width: fit-content;
+    margin: 10px 0px;
+  }
+  main > article > div > div:nth-child(3){
+    font-size: 20px;
+    padding-left: 0px;
+  }
+  main > article > div > div:nth-child(3) > a{
+    border-width: 3px;
+    padding: 0px 5px;
+    font-size: 15px;
+  }
+}
+
+@media screen and (max-width: 551px){
+
+  main{
+    margin-top: 50px;
+  }
+
+  main > article > button{
+    margin-left:200px;
+  }
+
+  main > article > div > img{
+    width: 200px;
+    height: auto;
+    margin-top: 30px;
+    margin-bottom: 70px;
+  }
+
+  main > article > div > div:nth-child(3){
+    font-size: 15px;
+    padding-left: 0px;
+  }
+  main > article > div > div:nth-child(3) > a{
+    border-width: 3px;
+    padding: 0px 5px;
+  }
+}
+
+@media screen and (max-width: 330px){
+  main > article > button{
+    margin-left: 60px;
+  }
+  main > article > div > section > p{
+    font-size: 10px;
+  }
+  main > article > div > section > h3{
+    font-size: 15px;
+  }
+}

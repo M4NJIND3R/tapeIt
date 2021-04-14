@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="description" content="Tape iT products promotion page">
+    <meta name="robots" content="nofollow, noindex">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Tape iT: Products Promotion</title>
+    <link rel="stylesheet" href="../css/style-promotion.css">
+    <link rel="stylesheet" href="../css/footer.css">
+    <link rel="stylesheet" href="../css/header.css">
+    <link rel="stylesheet" href="../css/menu.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inknut+Antiqua&family=Poppins:wght@900&display=swap" rel="stylesheet">
+    <script type="text/javascript" src="http://code.jquerry.com/jquery-3.4.1.min.js"></script>
+    <script type="text/javascript" src="../js/script.js"></script>
+  </head>
+  <body id="body" onload="changeRadio('radio1')" >
+    <!-- header for the page -->
+    <header>
+      <!-- logo image -->
+      <section>
+        <img src="../img/logo.png" alt="Tape iT logo">
+      </section>
+      <!-- slogan -->
+      <section>
+        <h1>Listen To Your lEgends...</h1>
+        <img src="../img/music-wave-icon.svg" alt="music wave form">
+      </section>
+      <!-- navigation bar -->
+      <nav>
+        <!-- empty div to make a straight line -->
+        <div></div>
+        <!-- slide menu opening div -->
+        <div onclick="open_Menu()">
+          <p>Menu</p>
+          <a href="javascript:void(0)"><img src="../img/menu-icon.svg" alt="menu icon"></a>
+        </div>
+        <!-- actual slid menu -->
+        <menu id="menu">
+          <!-- menu closing anchor tag container div -->
+          <div>
+            <a href="#" onclick="close_Menu()">&times;</a>
+          </div>
+          <!-- acount holder name and image -->
+          <div>
+            <img src="../img/act-img.svg" alt="account image">
+            <p>Your Name here</p>
+          </div>
+          <!-- menu list items -->
+          <div class="menu-content">
+            <ul>
+              <li><a href="#">Edit Profile</a></li>
+              <li><a href="#">My Account</a></li>
+              <li><a href="../index.html">Home</a></li>
+              <li><a href="promotion.html">Promotion Offers</a></li>
+              <li><a href="contact.html">Contact</a></li>
+              <li><a href="corporate-info.html">Corporate Information</a></li>
+            </ul>
+          </div>
+        </menu>
+      </nav>
+    </header>
+    <!-- main body of the page -->
+    <main id="main">
+      <!-- radio 1 content and details -->
+      <article id="radio1">
+        <!-- button to open next radio product and close this one -->
+        <button id="nextBtn1"  onclick="changeRadio('radio2',nextBtn2,radio2text,radio2name,radio2img)">Next Item >></button>
+        <div>
+          <!-- radio image -->
+          <img id="radio1img" src="../img/p1.jpg" alt="cassette player">
+          <!-- name and description of radio -->
+          <section>
+            <h3 id="radio1name">Vintage player & Radio GL100</h3>
+            <p id="radio1text">This cassette player is a vintage model renewed and restored from orignal model from early 1990's. This iconic piece is back to spread legengendary musical vibes in air with its in buitl cassette player and has evolved to play your favraite modern tunes too through its in built radio.</p>
+          </section>
+          <!-- price info of the radio -->
+          <div>
+            <h4>List price: $200 - 15% OFF</h4>
+            <h4>Our Price:  $170</h4>
+            <a href="#">Buy NOW>></a>
+          </div>
+        </div>
+      </article>
+
+      <!-- radio 2 content and details -->
+      <article id="radio2">
+        <!-- button to open next radio product and close this one -->
+        <button id="nextBtn2"  onclick="changeRadio('radio3',nextBtn3,radio3text,radio3name,radio3img)">Next Item >></button>
+        <div>
+          <!-- image of radio -->
+          <img id="radio2img" src="../img/p2.jpg" alt="cassette player">
+          <!-- name and description of radio -->
+          <section>
+            <h3 id="radio2name">Cassate bass RU200</h3>
+            <p id="radio2text">This Player will steal your heart thorugh its amazing bass. althought it seem old but dont judge a book by its cover. This layer packs a lot of power and a bass never experienced before</p>
+          </section>
+          <!-- price info of radio -->
+          <div>
+            <h4>List Price: $250 - 16% OFF</h4>
+            <h4>Our price:  $210/-</h4>
+            <a href="#">Buy NOW>></a>
+          </div>
+        </div>
+      </article>
+
+      <!-- radio 3 content and details -->
+      <article id="radio3">
+        <!-- button to open next radio product and close this one -->
+        <button id="nextBtn3"  onclick="changeRadio('radio4',nextBtn4,radio4text,radio4name,radio4img)">Next Item >></button>
+        <div>
+          <!-- radio image -->
+          <img id="radio3img" src="../img/p3.jpg" alt="cassette player">
+          <!-- name and description of radio -->
+          <section>
+            <h3 id="radio3name">Beats Player DU007</h3>
+            <p id="radio3text">Dual speaker, sterio audio with lates surround sound features. A retro besat rvived from slumber with ever more greatness. Play your cssettes or radio with mesmerizing sound quality of streo speakers.</p>
+          </section>
+          <!-- price info of the radio -->
+          <div>
+            <h4>List Price: $350 - 15% OFF</h4>
+            <h4>Our Price:  $299/-</h4>
+            <a href="#">Buy NOW>></a>
+          </div>
+        </div>
+      </article>
+
+      <!-- radio 4 content and details -->
+      <article id="radio4">
+        <!-- button to open next radio product and close this one -->
+        <button id="nextBtn4"  onclick="changeRadio('radio5',nextBtn5,radio5text,radio5name,radio5img)">Next Item >></button>
+        <div>
+          <!-- image of the radio -->
+          <img id="radio4img" src="../img/p4.jpg" alt="cassette player">
+          <!-- name and description of the radio -->
+          <section>
+            <h3 id="radio4name">Retro Rad boi HU202</h3>
+            <p id="radio4text">This restored radio can be taken anywhere with you hanging on your shoulder and can spread the melody all around you. The radio itself can utilize various modern functionality and features with top notch sound quality.</p>
+          </section>
+          <!-- price info of the radio -->
+          <div>
+            <h4>List Price: $160 - 10% OFF</h4>
+            <h4>Our Price:  $144/-</h4>
+            <a href="#">Buy NOW>></a>
+          </div>
+        </div>
+      </article>
+
+      <!-- radio 5 content and details -->
+      <article id="radio5">
+        <!-- button to open next radio product and close this one -->
+        <button id="nextBtn5"  onclick="changeRadio('radio6',nextBtn6,radio6text,radio6name,radio6img)">Next Item >></button>
+        <div>
+          <!-- image of the radio -->
+          <img id="radio5img" src="../img/p5.jpg" alt="cassette player">
+          <!-- name and description of the radio -->
+          <section>
+            <h3 id="radio5name">Walkerman PU2000</h3>
+            <p id="radio5text">A portable and private cssette playere is back with ever more features. a relic brought back to life with active noice cancelation, equalizer, dolby surround sound and much more. just put the player in pocket, sit back and relax.</p>
+          </section>
+          <!-- price info of the radio -->
+          <div>
+            <h4>List Price: $799 - 20% OFF</h4>
+            <h4>Our Price:  $639/-</h4>
+            <a href="#">Buy NOW>></a>
+          </div>
+        </div>
+      </article>
+
+      <!-- radio 6 content and details -->
+      <article id="radio6">
+        <!-- button to open next radio product and close this one -->
+        <button id="nextBtn6"  onclick="changeRadio('radio7',nextBtn7,radio7text,radio7name,radio7img)">Next Item >></button>
+        <div>
+          <!-- radio image -->
+          <img id="radio6img" src="../img/p6.jpg" alt="cassette player">
+          <!-- radio name and description -->
+          <section>
+            <h3 id="radio6name">Beast MU900</h3>
+            <p id="radio6text">This beast of history is extraoridinary. Multiple cassette holder, active cassetter switching, radio, bass, dolby surround, recording cassette, loud utpto 110db. this relic is legengendary, worthy for the legends.</p>
+          </section>
+          <!-- price info of the radio -->
+          <div>
+            <h4>List Price: $1199 - 20% OFF</h4>
+            <h4>Our Price:  $959/-</h4>
+            <a href="#">Buy NOW>></a>
+          </div>
+        </div>
+      </article>
+
+      <!-- radio 7 content and details -->
+      <article id="radio7">
+        <!-- button to open next radio product and close this one -->
+        <button id="nextBtn7"  onclick="changeRadio('radio1',nextBtn1,radio1text,radio1name,radio1img)">Next Item >></button>
+        <div>
+          <!-- image of the radio -->
+          <img id="radio7img" src="../img/p7.jpg" alt="cassette player">
+          <!-- rado name n ddescription -->
+          <section>
+            <h3 id="radio7name">Tape Player and recorder Pro</h3>
+            <p id="radio7text">This piece is a modern transformation of a relic. This is a professinal tool caliberated with utmost perfection to bring forth the best ot the best quality tapes.</p>
+          </section>
+          <!-- price info of the radio -->
+          <div>
+            <h4>List Price: $2999 - 31% OFF</h4>
+            <h4>Our Price:  $2099/-</h4>
+            <a href="#">Buy NOW>></a>
+          </div>
+        </div>
+      </article>
+    </main>
+    <!-- footer og the page -->
+    <footer>
+      <!-- logo image -->
+      <section>
+        <img src="../img/logo.png" alt="Tape iT logo">
+      </section>
+      <!-- slogan -->
+      <section>
+        <p>&#169; kama Tape iT retro music products pvt.ltd.</p>
+      </section>
+    </footer>
+  </body>
+</html>

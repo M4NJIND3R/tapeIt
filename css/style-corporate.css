@@ -1,0 +1,180 @@
+/* NOTE: this css file formats the corporate-info.html */
+
+/* body container properties */
+body{
+  display: flex;
+  flex-direction: column;
+  margin: 0px !important;
+  background-image: url("../img/background.jpg");
+}
+/* main comatainer proeprties */
+main{
+  background-color: #ff724a;
+  width: 85%;
+  align-self: center;
+  margin: 90px 0px;
+  display: flex;
+  flex-direction: column;
+  border-radius: 25px;
+  box-shadow: 0px 0px 50px -9px;
+}
+/* proeprties for continer of heading of page */
+main > section{
+  align-self: center;
+}
+/* heading text container properties */
+main > section > h2{
+  width: fit-content;
+  font-size: 55px;
+  font-family: 'Poppins', sans-serif;
+  color: #ede9d9;
+  border-radius: 20px;
+  border: 9px dashed #41426f;
+  padding: 10px;
+}
+/* properties for the first article of page */
+main > article:nth-child(2){
+  padding: 50px 50px 80px 50px;
+  display: flex;
+  align-items: center;
+}
+/* image proeprties for image in first article */
+main > article:nth-child(2) > section:first-child > img{
+  height: 600px;
+  width: auto;
+  transition: 1000ms;
+}
+/* hover property of first article causes changes to image in it */
+main > article:nth-child(2):hover > section:first-child > img{
+  box-shadow: 63px 52px 0px 0px #41426f;
+  transition: 1000ms;
+}
+/* article 1 text properties */
+main > article:nth-child(2)> section:last-child > p{
+  font-family: 'Inknut Antiqua', serif;
+  margin-left: 80px;
+}
+/* article 2 container proeprties */
+main > article:last-child{
+  padding: 50px 50px 80px 50px;
+  background-color: #41426f;
+  display: flex;
+  flex-direction: row-reverse;
+  border-radius: 25px;
+}
+/* proeprties ofr image in the article 2 */
+main > article:last-child > section:first-child > img{
+  width: 600px;
+  height: auto;
+  transition: 1000ms;
+}
+/* hover properties for article 2 cause changes in image in it */
+main > article:last-child:hover > section:first-child > img{
+  box-shadow: -63px 52px 0px 0px #ff724a;
+  transition: 1000ms;
+}
+/* properties for the text in article 2 */
+main > article:last-child > section:last-child > p{
+  font-family: 'Inknut Antiqua', serif;
+  margin-right: 63px;
+  color: #ffffff;
+}
+
+/**********************************************
+NOTE: Responsive css **************************
+***********************************************/
+
+@media screen and (max-width: 1330px){
+  main > article:nth-child(2){
+    padding: 25px;
+  }
+
+  main > article:nth-child(2) > section:first-child > img{
+    height: 460px;
+    width: auto;
+  }
+
+   main > article:nth-child(2):hover > section:first-child > img{
+    box-shadow: 20px 22px 0px 0px #41426f;
+  }
+
+  main > article:nth-child(2)> section:last-child > p{
+    margin-left: 20px;
+    font-size: 13px;
+  }
+
+  main > article:last-child{
+    flex-direction: column;
+    align-items: center;
+  }
+
+  main > article:last-child > section:last-child > p{
+    margin-right: 0px;
+    margin-top: 30px;
+    text-align: center;
+    font-size: 13px;
+  }
+
+  main > article:last-child:hover > section:first-child > img{
+    box-shadow: -23px 22px 0px 0px #ff724a;
+  }
+
+}
+
+@media screen and (max-width: 993px){
+
+  main > article:nth-child(2){
+    margin-top: 300px;
+  }
+
+  main > article:nth-child(2) > section:first-child > img{
+    margin-top: -360px;
+  }
+
+  main > article:nth-child(2)> section:last-child > p:nth-child(2){
+    margin-left: -170px;
+  }
+
+}
+
+@media screen and (max-width: 664px){
+
+  main > section > h2{
+    font-size: 30px;
+    text-align: center;
+  }
+
+  main > article:nth-child(2){
+    margin-top: 0px;
+  }
+
+  main > article:nth-child(2) > section:first-child > img{
+    margin-top: 0px;
+    width: 80%;
+    height: auto;
+  }
+
+  main > article:nth-child(2)> section:last-child > p{
+    margin-left: 0px;
+    text-align: center;
+  }
+
+  main > article:nth-child(2)> section:last-child > p:last-child{
+    margin-left: 0px;
+  }
+
+  main > article:nth-child(2){
+    flex-direction: column;
+  }
+
+  main > article:last-child{
+    padding: 20px;
+  }
+
+  main > article:nth-child(3) > section:first-child > img{
+    width: 100%;
+    height: auto;
+    text-align: center;
+  }
+
+}
